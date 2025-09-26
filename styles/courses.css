@@ -1,7 +1,6 @@
 main {
     width: 100%;
     height: fit-content;
-    overflow-y: visible;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -19,6 +18,29 @@ main .course {
     padding-right: 10px;
     border-radius: 15px;
     border: 1px solid black;
+    background-size: contain;
+}
+
+main>.course:hover {
+    animation: scope 4s ease-in 1;
+}
+
+@keyframes scope {
+    from {
+        background-size: 100%;
+        background-position-x: center;
+        background-position-y: center;
+    }
+
+    50% {
+        background-size: 150%;
+        background-position-x: center;
+        background-position-y: center;
+    }
+
+    to {
+        background-size: 100%;
+    }
 }
 
 h3 {

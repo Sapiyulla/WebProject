@@ -110,10 +110,3 @@
 .sidebar {
     position: relative;
 }
-
-.sidebar .settings {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 8px;
-    padding-bottom: 0;
-}

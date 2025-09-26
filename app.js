@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     {
         var nav_items = [
             'courses',
-            'profile',
-            'settings'
+            'profile'
         ]
 
         let courses = document.createElement('nav');
@@ -53,44 +52,20 @@ document.addEventListener('DOMContentLoaded', async () => {
                 })
             }
         }
-        let settings = document.createElement('nav');
-        {
-            settings.classList.add('nav-item', 'settings');
-            settings.appendChild(loaded_svgs.get('ni_settings'))
-
-            let title = document.createElement('p');
-            title.textContent = 'Settings'
-
-            settings.appendChild(title)
-
-            if (location.pathname != '/settings.html') {
-                settings.addEventListener('click', () => {
-                    window.open(location.origin + '/settings.html', '_self')
-                })
-            }
-        }
 
         switch (location.pathname) {
             case '/index.html':
                 courses.classList.add('active')
                 profile.classList.remove('active')
-                settings.classList.remove('active')
                 break;
             case '/profile.html':
                 courses.classList.remove('active')
                 profile.classList.add('active')
-                settings.classList.remove('active')
-                break;
-            case '/settings.html':
-                courses.classList.remove('active')
-                profile.classList.remove('active')
-                settings.classList.add('active')
                 break;
         }
 
         sidebar.appendChild(courses);
         sidebar.appendChild(profile);
-        sidebar.appendChild(settings);
     }
 
     // инкапсулируем реализацию кнопки сайдбара
