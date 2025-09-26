@@ -1,0 +1,118 @@
+.sidebar {
+    height: 100vh;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar>* {
+    margin: 10px 0px 0px 5px;
+}
+
+/* Состояния сайдбара */
+.sidebar.open {
+    width: 15%;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+.sidebar.close {
+    width: 49px;
+}
+
+/* Кнопка закрытия/открытия */
+.sidebar .sidebar-close-open-btn {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 0;
+    box-shadow: 0 0 10px 1px white;
+}
+
+.sidebar .sidebar-close-open-btn>svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Навигационные элементы */
+.sidebar .nav-item {
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    color: white;
+    font-size: larger;
+}
+
+/* Размеры контейнера nav-item в разных состояниях */
+.sidebar.open .nav-item {
+    width: 90%;
+}
+
+.sidebar.close .nav-item {
+    width: 29px;
+}
+
+/* Выравнивание nav-container */
+.sidebar nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.sidebar .nav-item.active {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* Текст в nav-item */
+.sidebar.close .nav-item>p {
+    display: none;
+}
+
+.sidebar.open .nav-item>p {
+    margin-left: 10px;
+    display: block;
+}
+
+/* SVG иконки - ОДИНАКОВЫЕ размеры во всех состояниях */
+.sidebar .nav-item>svg {
+    width: 29px;
+    height: 29px;
+    min-width: 29px;
+    min-height: 29px;
+    padding: 4px;
+}
+
+/* Активное состояние иконки */
+.sidebar .nav-item.active>svg {
+    border-radius: 10px;
+}
+
+/* Особые стили для профиля */
+.sidebar .nav-item.profile>svg {
+    width: 25px;
+    height: 25px;
+}
+
+.sidebar .nav-item.active.profile>svg {
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.sidebar {
+    position: relative;
+}
+
+.sidebar .settings {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 8px;
+    padding-bottom: 0;
+}
