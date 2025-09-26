@@ -1,0 +1,47 @@
+main {
+    width: 100%;
+    height: fit-content;
+    overflow-y: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+main .course {
+    color: aliceblue;
+    width: 240px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+h3 {
+    text-align: center;
+    background-color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 9px;
+}
+
+main .course>* {
+    padding: 0;
+    margin: 0;
+    margin-top: 5%;
+    color: black;
+}
+
+main .course>*:not(h3) {
+    font-size: larger;
+    font-weight: 700;
+    background-color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 9px;
+    width: fit-content;
+}

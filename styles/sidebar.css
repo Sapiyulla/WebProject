@@ -3,6 +3,7 @@
     background-color: #1e1e1e;
     display: flex;
     flex-direction: column;
+    position: sticky;
 }
 
 .sidebar>* {

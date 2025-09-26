@@ -1,6 +1,14 @@
 
 
 document.addEventListener('DOMContentLoaded', async () => {
+    if (
+        !localStorage.getItem('login') ||
+        !localStorage.getItem('email') ||
+        !localStorage.getItem('role')
+    ) {
+        window.open(location.origin + '/reg.html', '_self')
+    }
+
     var loaded_svgs = await loadAllSVG()
 
     let sidebar = document.createElement('article')

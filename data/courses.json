@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Advanced Python 3",
+        "author": "Samuel Romero",
+        "rating": 4.2,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdb6RGqckh8DXF2qr3azdldr8HQ6Jml6Uu_ORPOPISSfTi2RNOkDKNwM4opWFusXxp0tU&usqp=CAU"
+    },
+    {
+        "title": "Go in Microservices",
+        "author": "Mikhail Fedorov",
+        "rating": 4.9,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KT-4YeeulkKLgmaxuZzcZVOWvf82gED2Rg&s"
+    },
+    {
+        "title": "Vanilla Web",
+        "author": "Olo Sakira",
+        "rating": 3.4,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfXNEu5GoWi1TsNRI4icyHviWzrGrCOm5XPg&s"
+    },
+    {
+        "title": "React (Advanced)",
+        "author": "Gomer Paulo",
+        "rating": 2.7,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8drDlCfSQXmE702IZL95YSVlsB3kD-7Ny2w&s"
+    },
+    {
+        "title": "Postgres for Beginners",
+        "author": "Mikhail Fedorov",
+        "rating": 3.1,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVYGHUh_oSBMYsA9J2KTgO_IXCunqJu8zyKUX6_ob10JW_o8EocDdb6d-wFwt3tpCvkXU&usqp=CAU"
+    },
+    {
+        "title": "Redis (Advanced)",
+        "author": "Olo Sakira",
+        "rating": 2.1,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWBVoBTOlFW7XhxPLwf6bjkfrOgurafoTFRA&s"
+    },
+    {
+        "title": "Distributed Systems",
+        "author": "Karon Matue",
+        "rating": 4.3,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpm5sfamdvm_ukNshXFHhUcwXb2JXreztI_y_y68rJNDuQS9-wfI_Eszh0-Hi-9BufLwU&usqp=CAU"
+    },
+    {
+        "title": "Data Analisys",
+        "author": "Silena Rafaco",
+        "rating": 0.0,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvOLV9TuhQ9h0WB0bo9onL2tTr_yrxaoi9w&s"
+    }
+]
