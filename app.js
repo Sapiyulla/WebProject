@@ -1,12 +1,18 @@
 
 
 document.addEventListener('DOMContentLoaded', async () => {
+    // Проверяем, находимся ли мы на странице регистрации
+    if (location.pathname.endsWith('reg.html')) {
+        return; // Не выполняем проверку авторизации на странице регистрации
+    }
+
     if (
         !localStorage.getItem('login') ||
         !localStorage.getItem('email') ||
         !localStorage.getItem('role')
     ) {
         window.open(location.origin + '/reg.html', '_self')
+        return;
     }
 
     var loaded_svgs = await loadAllSVG()

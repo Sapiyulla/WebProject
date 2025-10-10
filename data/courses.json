@@ -1,50 +1,226 @@
 [
     {
+        "id": 1,
         "title": "Advanced Python 3",
         "author": "Samuel Romero",
         "rating": 4.2,
-        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdb6RGqckh8DXF2qr3azdldr8HQ6Jml6Uu_ORPOPISSfTi2RNOkDKNwM4opWFusXxp0tU&usqp=CAU"
+        "background_url": "https://softuni.bg/Files/CRM-Modules-Photos/Python/Python-Advanced_facebook.jpg",
+        "description": "Этот продвинутый курс по Python 3 охватывает сложные аспекты языка, которые необходимы для профессиональной разработки. Вы изучите декораторы, генераторы и контекстные менеджеры. Курс включает работу с метаклассами и дескрипторами. Мы рассмотрим асинхронное программирование с asyncio. Вы научитесь оптимизировать производительность приложений. Курс содержит практические примеры из реальных проектов. Вы освоите продвинутые структуры данных и алгоритмы. Мы изучим создание и распространение пакетов. Курс подходит для разработчиков с опытом работы с Python."
     },
     {
-        "title": "Go in Microservices",
+        "id": 2,
+        "title": "Docker & Kubernetes",
         "author": "Mikhail Fedorov",
-        "rating": 4.9,
-        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KT-4YeeulkKLgmaxuZzcZVOWvf82gED2Rg&s"
+        "rating": 4.7,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuTGcWNr4lG6MR2G-QtbOeqZdbgQQHb-QNrw&s",
+        "description": "Практический курс по контейнеризации и оркестрации. Вы научитесь работать с Docker. Мы рассмотрим создание образов. Вы освоите Docker Compose. Курс включает развертывание в Kubernetes. Вы изучите pods и services. Мы поработаем с Helm charts. Вы поймете принципы мониторинга. Курс содержит реальные сценарии. Вы сможете управлять контейнерами в продакшене."
     },
     {
+        "id": 3,
         "title": "Vanilla Web",
         "author": "Olo Sakira",
         "rating": 3.4,
-        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfXNEu5GoWi1TsNRI4icyHviWzrGrCOm5XPg&s"
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa3WqcCbbM3MukyG0TOSaU_SqY1-MUHuBMgrhqUOPMaLA4nvzmHF_ytC7JtfX67e3cArw&usqp=CAU",
+        "description": "Этот курс учит основам веб-разработки без использования фреймворков. Вы освоите чистый JavaScript, HTML и CSS. Мы рассмотрим манипуляции с DOM. Вы научитесь работать с событиями. Курс включает создание анимаций. Вы изучите современные CSS-техники. Мы поработаем с Web API. Вы поймете принципы доступности. Курс подходит для начинающих разработчиков. Вы получите прочную основу для дальнейшего роста."
     },
     {
+        "id": 4,
         "title": "React (Advanced)",
         "author": "Gomer Paulo",
         "rating": 2.7,
-        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8drDlCfSQXmE702IZL95YSVlsB3kD-7Ny2w&s"
+        "background_url": "https://www.atakinteractive.com/hs-fs/hubfs/react%20image%20blog-1.png?width=1242&height=708&name=react%20image%20blog-1.png",
+        "description": "Продвинутый курс по React для опытных разработчиков. Вы углубитесь в внутреннее устройство React. Мы изучим оптимизацию производительности. Вы освоите продвинутые хуки. Курс включает работу с контекстом. Вы научитесь тестированию компонентов. Мы рассмотрим паттерны проектирования. Вы изучите интеграцию с другими библиотеками. Курс охватывает лучшие практики. Вы сможете создавать сложные приложения."
     },
     {
+        "id": 5,
         "title": "Postgres for Beginners",
         "author": "Mikhail Fedorov",
         "rating": 3.1,
-        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVYGHUh_oSBMYsA9J2KTgO_IXCunqJu8zyKUX6_ob10JW_o8EocDdb6d-wFwt3tpCvkXU&usqp=CAU"
+        "background_url": "https://serverflow.ru/upload/iblock/3d5/egzmidpizbtch1m1klyz0xkqkucrvjs5/postgresql-cover.png",
+        "description": "Базовый курс по PostgreSQL для начинающих. Вы изучите основы SQL. Мы рассмотрим установку и настройку. Вы научитесь создавать базы данных. Курс включает работу с таблицами. Вы освоите основные типы данных. Мы изучим простые запросы. Вы поймете принципы индексов. Курс содержит практические задания. Вы получите фундамент для работы с базами данных."
     },
     {
-        "title": "Redis (Advanced)",
-        "author": "Olo Sakira",
-        "rating": 2.1,
-        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWBVoBTOlFW7XhxPLwf6bjkfrOgurafoTFRA&s"
-    },
-    {
+        "id": 6,
         "title": "Distributed Systems",
         "author": "Karon Matue",
         "rating": 4.3,
-        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpm5sfamdvm_ukNshXFHhUcwXb2JXreztI_y_y68rJNDuQS9-wfI_Eszh0-Hi-9BufLwU&usqp=CAU"
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMfOX7R80HKf6ZGDi37uIXw-NHkmlZYu5B-Q&s",
+        "description": "Курс по проектированию распределенных систем. Вы изучите теоретические основы. Мы рассмотрим проблемы согласованности. Вы освоите алгоритмы распределения. Курс включает работу с сетевыми протоколами. Вы научитесь проектировать отказоустойчивые системы. Мы изучим балансировку нагрузки. Вы поймете принципы масштабирования. Курс содержит кейсы из реальной практики. Вы сможете проектировать надежные системы."
     },
     {
+        "id": 7,
         "title": "Data Analisys",
         "author": "Silena Rafaco",
         "rating": 0.0,
-        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvOLV9TuhQ9h0WB0bo9onL2tTr_yrxaoi9w&s"
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJzkJxyNefwTMLEw3lf16gzZYnvBaf4-zpjQ&s",
+        "description": "Комплексный курс по анализу данных для начинающих. Вы изучите основные концепции анализа. Мы рассмотрим методы сбора данных. Вы освоите инструменты визуализации. Курс включает работу с Python. Вы научитесь очистке данных. Мы изучим статистические методы. Вы поймете принципы интерпретации результатов. Курс содержит практические примеры. Вы получите навыки для работы с данными."
+    },
+    {
+        "id": 8,
+        "title": "Machine Learning Fundamentals",
+        "author": "Samuel Romero",
+        "rating": 4.5,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz2N0cpV4WRcXtnW0evHczL_sTIJ3O4bk4cg&s",
+        "description": "Фундаментальный курс по машинному обучению. Вы изучите основные алгоритмы. Мы рассмотрим линейную регрессию. Вы освоите классификацию. Курс включает работу с нейронными сетями. Вы научитесь оценивать модели. Мы изучим особенности данных. Вы поймете принципы feature engineering. Курс содержит практические проекты. Вы получите прочную основу в ML."
+    },
+    {
+        "id": 9,
+        "title": "Go in Microservices",
+        "author": "Mikhail Fedorov",
+        "rating": 4.9,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsJZrKtH5YzacAykYDIzMiEq2JTtvzh2H1RA&s",
+        "description": "Курс посвящен созданию микросервисной архитектуры на языке Go. Вы научитесь проектировать масштабируемые системы. Мы рассмотрим шаблоны коммуникации между сервисами. Курс включает работу с gRPC и REST API. Вы освоите контейнеризацию с Docker. Мы изучим оркестрацию с Kubernetes. Вы узнаете о мониторинге и логировании. Курс охватывает вопросы безопасности микросервисов. Вы получите практический опыт развертывания. Это идеальный курс для бэкенд-разработчиков."
+    },
+    {
+        "id": 10,
+        "title": "JavaScript Mastery",
+        "author": "Olo Sakira",
+        "rating": 3.8,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFdFfarIm7NpOf8Ti5vV6H9-fKYCP8xnBrIw&s",
+        "description": "Полный курс по JavaScript от основ до продвинутых тем. Вы изучите синтаксис языка. Мы рассмотрим функции и замыкания. Вы освоите асинхронное программирование. Курс включает работу с объектами. Вы научитесь работать с классами. Мы изучим современные возможности ES6+. Вы поймете принципы ООП. Курс содержит множество примеров. Вы станете уверенным JavaScript разработчиком."
+    },
+    {
+        "id": 11,
+        "title": "Node.js Backend Development",
+        "author": "Gomer Paulo",
+        "rating": 3.2,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2BLOX7lwfQ9mOB_A99JIVRi7KHA1OmLhq5ZAJ21uBUafWSv7ngiiH0_yQPvRfmw4_h9g&usqp=CAU",
+        "description": "Курс по разработке бэкенд-приложений на Node.js. Вы научитесь создавать серверы. Мы рассмотрим работу с Express. Вы освоите подключение к базам данных. Курс включает аутентификацию. Вы изучите обработку ошибок. Мы поработаем с middleware. Вы поймете принципы REST API. Курс содержит создание полноценного API. Вы сможете разрабатывать backend-приложения."
+    },
+    {
+        "id": 12,
+        "title": "MongoDB Essentials",
+        "author": "Mikhail Fedorov",
+        "rating": 3.9,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxbYAsFJ4HyVMOHD8Vp06iEfcHbfI7FUeiDA&s",
+        "description": "Курс по работе с MongoDB - документоориентированной NoSQL базой данных. Вы изучите основы документной модели. Мы рассмотрим CRUD операции. Вы освоите агрегационные pipeline. Курс включает индексацию. Вы научитесь оптимизировать запросы. Мы изучим репликацию. Вы поймете принципы шардирования. Курс содержит практические задания. Вы получите навыки работы с MongoDB."
+    },
+    {
+        "id": 13,
+        "title": "System Design Principles",
+        "author": "Karon Matue",
+        "rating": 4.6,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-F020bmHCrqkwL6QRKSe1ImaXV1pqJ1wbIw&s",
+        "description": "Курс по принципам проектирования программных систем. Вы изучите архитектурные паттерны. Мы рассмотрим масштабируемость. Вы освоите надежность систем. Курс включает безопасность. Вы научитесь оценивать требования. Мы изучим компромиссы проектирования. Вы поймете принципы модульности. Курс содержит разбор реальных систем. Вы сможете проектировать качественные приложения."
+    },
+    {
+        "id": 14,
+        "title": "Data Visualization",
+        "author": "Silena Rafaco",
+        "rating": 3.5,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk9SHFIkN8kugbtRcoIZIw3In6zCZeE2lCuA&s",
+        "description": "Курс по визуализации данных для аналитиков и разработчиков. Вы изучите принципы визуального восприятия. Мы рассмотрим различные типы графиков. Вы освоите инструменты визуализации. Курс включает работу с D3.js. Вы научитесь создавать интерактивные дашборды. Мы изучим лучшие практики. Вы поймете как рассказывать истории данными. Курс содержит практические проекты. Вы сможете эффективно представлять данные."
+    },
+    {
+        "id": 15,
+        "title": "Python for Data Science",
+        "author": "Samuel Romero",
+        "rating": 4.4,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaNtbeaUTEVIDXWdXNVHwQw_ebhy02FqUNLg&s",
+        "description": "Специализированный курс по использованию Python в Data Science. Вы изучите основные библиотеки. Мы рассмотрим pandas для анализа. Вы освоите numpy для вычислений. Курс включает визуализацию с matplotlib. Вы научитесь работать с Jupyter notebooks. Мы изучим предобработку данных. Вы поймете принципы feature engineering. Курс содержит реальные датасеты. Вы получите практические навыки в Data Science."
+    },
+    {
+        "id": 16,
+        "title": "CSS & HTML Pro",
+        "author": "Olo Sakira",
+        "rating": 3.1,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKDx3ADLNZPgjSXmz3otd-wMJvnibeRK217ob6liFqOUKuyzRiBp08-ITqJNUxtbyOyzM&usqp=CAU",
+        "description": "Продвинутый курс по современным возможностям CSS и HTML. Вы изучите Flexbox и Grid. Мы рассмотрим адаптивный дизайн. Вы освоите CSS анимации. Курс включает препроцессоры. Вы научитесь методологии BEM. Мы изучим доступность. Вы поймете принципы кроссбраузерности. Курс содержит создание сложных layout. Вы станете экспертом в верстке."
+    },
+    {
+        "id": 17,
+        "title": "Vue.js Framework",
+        "author": "Gomer Paulo",
+        "rating": 2.9,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ48HWqncxQ4zby6_YLKl9IrxKmq41uXT0qqA&s",
+        "description": "Курс по фреймворку Vue.js для фронтенд-разработки. Вы изучите основы Vue. Мы рассмотрим компоненты. Вы освоите Vuex для управления состоянием. Курс включает Vue Router. Вы научитесь создавать SPA. Мы изучим директивы. Вы поймете реактивность Vue. Курс содержит практические проекты. Вы сможете разрабатывать на Vue.js."
+    },
+    {
+        "id": 18,
+        "title": "SQL Optimization",
+        "author": "Mikhail Fedorov",
+        "rating": 4.1,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfLulgvO3-e_N95WiWBkNrWJ6_d-_9hqu2lrr04hpH0sKoFEUYSZyzLRe5eRRlSpkShuA&usqp=CAU",
+        "description": "Специализированный курс по оптимизации SQL запросов. Вы изучите планы выполнения. Мы рассмотрим индексацию. Вы освоите анализ производительности. Курс включает работу с EXPLAIN. Вы научитесь избегать N+1 проблем. Мы изучим кэширование. Вы поймете принципы нормализации. Курс содержит реальные примеры оптимизации. Вы сможете значительно ускорить запросы."
+    },
+    {
+        "id": 19,
+        "title": "Message Queues",
+        "author": "Olo Sakira",
+        "rating": 2.8,
+        "background_url": "https://media.geeksforgeeks.org/wp-content/uploads/20240105170635/Message-Queues.jpg",
+        "description": "Курс по системам очередей сообщений для распределенных приложений. Вы изучите RabbitMQ. Мы рассмотрим Apache Kafka. Вы освоите принципы pub/sub. Курс включает гарантии доставки. Вы научитесь обработке ошибок. Мы изучим паттерны использования. Вы поймете масштабирование. Курс содержит настройку кластеров. Вы сможете интегрировать очереди в архитектуру."
+    },
+    {
+        "id": 20,
+        "title": "Cloud Computing",
+        "author": "Karon Matue",
+        "rating": 4.4,
+        "background_url": "https://aimconsulting.com/wp-content/uploads/2022/11/cloud-computing-benefits.jpg",
+        "description": "Комплексный курс по облачным технологиям и платформам. Вы изучите AWS, Azure и GCP. Мы рассмотрим IaaS, PaaS, SaaS. Вы освоите виртуальные машины. Курс включает контейнерные сервисы. Вы научитесь управлять ресурсами. Мы изучим мониторинг и биллинг. Вы поймете принципы безопасности. Курс содержит развертывание приложений. Вы получите навыки работы с облачными платформами."
+    },
+    {
+        "id": 21,
+        "title": "Big Data Processing",
+        "author": "Silena Rafaco",
+        "rating": 3.7,
+        "background_url": "https://media.licdn.com/dms/image/v2/D5612AQETgmi04zRMhg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1708696150136?e=2147483647&v=beta&t=GFPCE6w1UoXMhGT3DZChUBNLEjscA3WH1gl7ZPwGW_c",
+        "description": "Курс по обработке больших данных с использованием современных технологий. Вы изучите Apache Spark. Мы рассмотрим Hadoop ecosystem. Вы освоите распределенные вычисления. Курс включает потоковую обработку. Вы научитесь работать с кластерами. Мы изучим ETL процессы. Вы поймете принципы MapReduce. Курс содержит обработку реальных датасетов. Вы сможете работать с большими объемами данных."
+    },
+    {
+        "id": 22,
+        "title": "Python Web Scraping",
+        "author": "Samuel Romero",
+        "rating": 4.0,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScgVr8KeoUK1BqjemcLIHFqqqBulHmAIGKOg&s",
+        "description": "Практический курс по веб-скрапингу на Python. Вы изучите библиотеки BeautifulSoup и Scrapy. Мы рассмотрим парсинг HTML. Вы освоите работу с API. Курс включает обход анти-бот систем. Вы научитесь сохранять данные. Мы изучим этические аспекты. Вы поймете принципы асинхронного скрапинга. Курс содержит реальные проекты. Вы сможете автоматизировать сбор данных."
+    },
+    {
+        "id": 23,
+        "title": "API Design & Development",
+        "author": "Mikhail Fedorov",
+        "rating": 4.5,
+        "background_url": "https://codimite.ai/wp-content/uploads/Frame-2-1568x830.webp",
+        "description": "Курс по проектированию и разработке качественных API. Вы изучите REST principles. Мы рассмотрим GraphQL. Вы освоите документацию API. Курс включает версионирование. Вы научитесь аутентификации. Мы изучим rate limiting. Вы поймете принципы безопасности. Курс содержит создание полноценного API. Вы сможете разрабатывать интерфейсы для интеграций."
+    },
+    {
+        "id": 24,
+        "title": "Frontend Performance",
+        "author": "Olo Sakira",
+        "rating": 3.3,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOtPYUl2Eyr9icVrAcyTQHupyLep2MYQ0reA&s",
+        "description": "Специализированный курс по оптимизации производительности фронтенд-приложений. Вы изучите метрики производительности. Мы рассмотрим оптимизацию загрузки. Вы освоите кэширование. Курс включает lazy loading. Вы научитесь анализировать производительность. Мы изучим инструменты разработчика. Вы поймете принципы рендеринга. Курс содержит оптимизацию реальных проектов. Вы сможете создавать быстрые приложения."
+    },
+    {
+        "id": 25,
+        "title": "Angular Framework",
+        "author": "Gomer Paulo",
+        "rating": 2.5,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcGwP0nyTXtLuLG4J1Vi7gzU3HdKdn7fLgkgZKrT72HspGys9xKR7joatn_vLvv3wyrsk&usqp=CAU",
+        "description": "Курс по фреймворку Angular для enterprise-разработки. Вы изучите TypeScript основы. Мы рассмотрим компоненты и модули. Вы освоите сервисы и dependency injection. Курс включает RxJS. Вы научитесь работе с формами. Мы изучим маршрутизацию. Вы поймете архитектуру Angular. Курс содержит создание полноценного приложения. Вы сможете разрабатывать на Angular."
+    },
+    {
+        "id": 26,
+        "title": "Database Security",
+        "author": "Mikhail Fedorov",
+        "rating": 3.8,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalJY--2Zyhso3Nwp5EWfhz8IYgRstTgFv8Q&s",
+        "description": "Курс по безопасности баз данных для администраторов и разработчиков. Вы изучите аутентификацию и авторизацию. Мы рассмотрим SQL injection. Вы освоите шифрование данных. Курс включает аудит безопасности. Вы научитесь настройке прав доступа. Мы изучим резервное копирование. Вы поймете принципы compliance. Курс содержит практические сценарии защиты. Вы сможете обеспечить безопасность БД."
+    },
+    {
+        "id": 27,
+        "title": "Caching Strategies",
+        "author": "Olo Sakira",
+        "rating": 2.4,
+        "background_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKY2SK0AGjqbV1edgl0fjNwvltWFmw0mBdNN_mVnplA34WH7E3sb18KeMHAI_GcqcjDadQn1nW3dCASCqeWYmR9KOdkeEcrNLu921b9_8ECoZxOM5UvX9MkOvd_nKq1w26zfK5gseNkxI/s1600/CACHING-min.png",
+        "description": "Курс по стратегиям кэширования для высоконагруженных приложений. Вы изучите Redis и Memcached. Мы рассмотрим кэширование на разных уровнях. Вы освоите инвалидацию кэша. Курс включает CDN. Вы научитесь стратегиям кэширования. Мы изучим мониторинг кэша. Вы поймете trade-offs кэширования. Курс содержит реализацию в реальных проектах. Вы сможете значительно ускорить приложения."
+    },
+    {
+        "id": 28,
+        "title": "DevOps Practices",
+        "author": "Karon Matue",
+        "rating": 4.7,
+        "background_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEUFDNFjqCLP1yiBNkDIj_-rqQgVBTpZUe3Q&s",
+        "description": "Комплексный курс по DevOps практикам для современных IT-команд. Вы изучите CI/CD pipelines. Мы рассмотрим инфраструктуру как код. Вы освоите автоматизацию развертывания. Курс включает мониторинг и alerting. Вы научитесь работать с Git workflows. Мы изучим конфигурационное управление. Вы поймете принципы SRE. Курс содержит создание полноценного pipeline. Вы получите навыки DevOps инженера."
     }
 ]

@@ -77,7 +77,7 @@
         document.getElementById('submit').onclick = (e) => {
             e.preventDefault();
             localStorage.setItem('login', document.getElementById('login').value);
-            localStorage.setItem('login', document.getElementById('password').value);
+            localStorage.setItem('password', document.getElementById('password').value); // Было опечатка 'login'
             localStorage.setItem('email', document.getElementById('email').value);
             localStorage.setItem('role', document.getElementById('role').value);
 
