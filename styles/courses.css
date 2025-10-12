@@ -167,15 +167,6 @@ main>.courses>.course {
     position: relative;
 }
 
-main>.courses>.course::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-}
-
 main>.courses>.course:hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
@@ -220,20 +211,19 @@ main>.courses>.course>.rating {
 /* Улучшаем скролл */
 main {
     scrollbar-width: thin;
-    scrollbar-color: #667eea #f1f1f1;
+    scrollbar-color: white rgba(0, 0, 0, 0);
 }
 
-/*
 main::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
 }
 
 main::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
+    height: 2px;
+    width: 10px;
 }
 
 main::-webkit-scrollbar-thumb {
     background: linear-gradient(135deg, #667eea, #764ba2);
-    border-radius: 10px;
-}*/
+    border-radius: 20px;
+}

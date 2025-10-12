@@ -53,6 +53,11 @@ window.onload = async () => {
                 ctxmenu.classList.replace('closed', 'opened');
                 setTimeout(() => { ctxmenu.classList.replace('opened', 'closed') }, 3000)
             })
+
+            el.addEventListener('click', () => {
+                localStorage.setItem('active_course', course.id);
+                window.open('/info.html');
+            })
         }
         coursesList.appendChild(el)
     });
