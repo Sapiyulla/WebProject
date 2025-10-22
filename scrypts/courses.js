@@ -9,9 +9,13 @@ window.onload = async () => {
 
     var ctxmenu = document.createElement('div');
     {
-        var info = document.createElement('div');
-        info.textContent = `🛈 Information`
-        ctxmenu.appendChild(info);
+        // Добавляем кнопку удаления (только для авторов)
+        if (localStorage.getItem('role') === 'author') {
+            var deleteBtn = document.createElement('div');
+            deleteBtn.textContent = `🗑️ Delete`
+            deleteBtn.classList.add('ctxmenu-item', 'delete');
+            ctxmenu.appendChild(deleteBtn);
+        }
 
         ctxmenu.classList.add('menu');
         ctxmenu.classList.add('closed');
@@ -20,6 +24,8 @@ window.onload = async () => {
 
     var coursesList = document.createElement('div');
     coursesList.classList.add('courses')
+
+    var currentCourseId = null; // Для хранения ID курса, на котором вызвали контекстное меню
 
     courses.forEach(course => {
         var el = document.createElement('div');
@@ -48,10 +54,17 @@ window.onload = async () => {
 
             el.addEventListener('contextmenu', (e) => {
                 e.preventDefault()
+                currentCourseId = course.id;
                 ctxmenu.style.left = e.clientX + 'px';
                 ctxmenu.style.top = e.clientY + 'px';
                 ctxmenu.classList.replace('closed', 'opened');
-                setTimeout(() => { ctxmenu.classList.replace('opened', 'closed') }, 3000)
+                
+                // Скрываем меню через 3 секунды
+                setTimeout(() => { 
+                    if (ctxmenu.classList.contains('opened')) {
+                        ctxmenu.classList.replace('opened', 'closed') 
+                    }
+                }, 3000)
             })
 
             el.addEventListener('click', () => {
@@ -62,9 +75,59 @@ window.onload = async () => {
         coursesList.appendChild(el)
     });
 
+    // Обработчики для контекстного меню
+    ctxmenu.querySelector('.ctxmenu-item:first-child').addEventListener('click', () => {
+        if (currentCourseId) {
+            localStorage.setItem('active_course', currentCourseId);
+            window.open('/info.html');
+        }
+        ctxmenu.classList.replace('opened', 'closed');
+    });
+
+    // Обработчик для удаления курса
+    if (localStorage.getItem('role') === 'author') {
+        ctxmenu.querySelector('.delete').addEventListener('click', async () => {
+            if (currentCourseId) {
+                const confirmDelete = confirm('Вы уверены, что хотите удалить этот курс? Это действие нельзя отменить.');
+                if (confirmDelete) {
+                    await deleteCourse(currentCourseId);
+                    // Перезагружаем страницу для обновления списка курсов
+                    location.reload();
+                }
+            }
+            ctxmenu.classList.replace('opened', 'closed');
+        });
+    }
+
+    // Закрытие контекстного меню при клике вне его
+    document.addEventListener('click', (e) => {
+        if (!ctxmenu.contains(e.target)) {
+            ctxmenu.classList.replace('opened', 'closed');
+        }
+    });
+
     Main.appendChild(coursesList);
     Main.appendChild(ctxmenu)
     document.body.appendChild(Main);
+}
+
+async function deleteCourse(courseId) {
+    try {
+        // Загружаем текущие курсы
+        let courses = await LoadCourses();
+        
+        // Фильтруем курсы, удаляя выбранный
+        const updatedCourses = courses.filter(course => course.id !== courseId);
+        
+        // Сохраняем обновленный список
+        localStorage.setItem('user_created_courses', JSON.stringify(updatedCourses));
+        
+        alert('Курс успешно удален!');
+        
+    } catch (error) {
+        console.error('Ошибка при удалении курса:', error);
+        alert('Произошла ошибка при удалении курса.');
+    }
 }
 
 function createCarousel(featuredCourses) {
@@ -142,11 +205,22 @@ function initializeCarousel(carousel) {
 
 async function LoadCourses() {
     try {
+        // Пытаемся загрузить пользовательские курсы из localStorage
+        const userCourses = localStorage.getItem('user_created_courses');
+        if (userCourses) {
+            return JSON.parse(userCourses);
+        }
+        
+        // Если нет пользовательских курсов, загружаем оригинальные
         var courses = await fetch('data/courses.json')
-            .then(data => data)
-
-        return courses.json()
+            .then(data => data.json());
+            
+        // Сохраняем оригинальные курсы в localStorage для консистентности
+        localStorage.setItem('user_created_courses', JSON.stringify(courses));
+        
+        return courses;
     } catch (error) {
         alert(`Error: courses loading error: ${error}`)
+        return [];
     }
 }

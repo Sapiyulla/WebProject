@@ -205,6 +205,23 @@ main>.courses>.course>.rating {
 }
 
 .menu {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 8px 0;
+    padding-left: 10px;
+    min-width: 150px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    color: brown;
+    font-weight: 700;
+}
+
+.menu:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+.menu.closed {
     display: none;
 }
 

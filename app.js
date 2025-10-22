@@ -59,6 +59,31 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         }
 
+        if (localStorage.getItem('role') === 'author') {
+            let editor = document.createElement('nav');
+            {
+                editor.classList.add('nav-item', 'editor');
+                editor.appendChild(loaded_svgs.get('ni_settings')) // Используем иконку настроек для редактора
+                
+                let title = document.createElement('p');
+                title.textContent = 'Editor'
+                
+                editor.appendChild(title)
+                
+                if (location.pathname != '/editor.html') {
+                    editor.addEventListener('click', () => {
+                        window.open(location.origin + '/editor.html', '_self')
+                    })
+                }
+            }
+            
+            if (location.pathname === '/editor.html') {
+                editor.classList.add('active');
+            }
+            
+            sidebar.appendChild(editor);
+        }
+
         switch (location.pathname) {
             case '/index.html':
                 courses.classList.add('active')
